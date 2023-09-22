@@ -7,7 +7,6 @@ export default function App() {
 
   const [sound, setSound] = useState();
 
-
   const playSound = async () => {
     console.log('Loading Sound');
     const { sound } = await Audio.Sound.createAsync( require('./assets/chime.mp3')
